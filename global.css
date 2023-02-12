@@ -1,0 +1,879 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* section{
+    max-width: 1920px ;
+    min-width: 350px;
+} */
+.container{
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    /* padding: 1rem; */
+}
+/* .row{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+} */
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    list-style: none;
+}
+
+/* ============================== Nav-Bar ================================*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #7871d4;
+}
+.navbar .div-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin-left: 5%;
+    margin-right: 20%;
+    margin-top: 1.2%;
+    margin-bottom: 1.2%;
+    color: white;
+}
+.navbar .div-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin-left:15%;
+    margin-top: 1.2%;
+    margin-bottom: 1.2%;
+    width: 12%;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    color: white;
+}
+.navbar .div-2 img{
+    width: 15%;
+    margin-left: 5%; 
+    margin-right: 2%;
+}
+.navbar .div-3 {
+    margin-top: 1.2%;
+    margin-bottom: 1.2%;
+    color: white;
+}
+.navbar .div-4 {
+    margin-top: 1.2%;
+    margin-bottom: 1.2%;
+    margin-right: 5%;
+    color: white;
+}
+.menu-bar i{
+    display: none;
+    
+}
+
+/* ======================== media query for lptop mode=========================== */
+
+
+@media (max-width : 1024px ) {
+    .navbar{
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: space-between;
+        width: 100%;
+        background-color: #7871d4;
+    }
+    .navbar .div-1 {
+        display: flex;
+        justify-content: space-between;
+        /* flex-direction: row; */
+        /* margin-right: 0px; */
+        width: 40%;
+        align-items: center;
+        margin-left: 5%;
+        margin-right: 1%;
+       
+        color: white;
+    }
+    .navbar .div-2 {
+        display: flex;
+        flex-direction: row;
+        width: 14%;
+        margin-top: 1.2%;
+        margin-bottom: 1.2%;
+        margin-left: 2%;
+    }
+    .navbar .div-2 img{
+        width: 12%;
+         margin-left: 5%; 
+        margin-right: 2%; 
+    }
+    .navbar .div-3 {
+        /* width: 50%; */
+        width: 14%;
+        margin-top: 1.2%;
+        margin-bottom: 1.2%;
+        color: white;
+    }
+    .navbar .div-4 {
+        margin-top: 1.2%;
+        margin-bottom: 1.2%;
+        margin-right: 5%;
+        color: white;
+    }
+    .navbar .div-1{
+        display: none;
+    }
+    .header-body .p-1,.p-2,.btn{
+        font-size: 14px;
+    } 
+}
+@media (max-width : 781px) {
+    .navbar{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar .div-1 {
+        /* width: 50%; */
+        display: none;
+    }
+    .navbar .div-2 {
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+        margin-top: 1.2%;
+        margin-bottom: 1.2%;
+        margin-right: 2%;
+        margin-left: 2%;
+        border: none;
+    }
+    .navbar .div-3 {
+        /* width: 50%; */
+        margin-right: 2%;
+        width: 30%;
+    }
+    .navbar .div-4 {
+        margin-top: 1.2%;
+        margin-bottom: 1.2%;
+        margin-right: 5%;
+        color: white;
+    }
+    
+}
+
+
+
+/* ============================== HEADER - IMG =================================== */
+.header-img{
+    background-image: url('Assets/background-img.png');
+    width: 100%;
+    min-height: 500px;
+    background-size: 100% 100%;
+}
+/* ========================= header - nav ==================== */
+.header-img .div-1{
+    width: 45%;
+}
+.header-img .div-1 p img{
+    margin-top: 6%;
+    margin-left: 8%;
+    width: 5%;
+}
+.header-img .div-1 p{
+   font-size: 30px;
+   font-weight: 700;
+   color: white;
+  
+}
+.header-img .header-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+}
+.header-img .div-2{
+    width: 58%;
+}
+.header-img .header-nav .div-2{
+    margin-top: 3%;
+    margin-left: 2%;
+}
+.header-img .header-nav .div-2 a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+.header-img .header-nav .div-2 button{
+    font-size: 16px;
+    color: white;
+    background: transparent;
+    width: 16%;
+    height: 40px;
+    margin-right: 2%;
+    margin-left: 1%;
+    border: 1.5px solid white;
+}
+/* ======================= media query for laptop ====================== */
+@media (max-width : 1024px) {
+    .header-img .div-1{
+        width: 35%;
+    }
+    .header-img .div-1 p img{
+        
+        width: 8%;
+    }
+    .header-img .div-2{
+        width: 65%;
+    }
+    .header-img .header-nav .div-2{
+        margin-top: 2%;
+    }
+    .header-img .header-nav .div-2 a{
+        font-size: 13px;
+        color: white;
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+    .header-img{
+        background-image: url('Assets/background-img.png');
+        width: 100%;
+        min-height: 70vh;
+        background-size: 100% 100%;
+        position: relative;
+    }
+}
+@media (max-width : 570px) {
+    .menu-bar i{
+        display: block;
+        font-size: 150%;
+        margin-right: 20px;
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    ul{
+        display: none;
+    }
+    .header-img .header-nav .div-2 {
+       margin-top: 0px;
+    }
+    .header-img .div-1{
+        width: 70%;
+    }
+    .header-img .div-1 p img{
+        
+        width: 10%;
+    }
+   .header-img .div-1  p{
+        font-size: 150% !important;
+    }
+}
+/* =================== header-body ================================ */
+.header-img .body{
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header-img .body .header-body{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    /* min-height: 50vh; */
+    z-index: 1;
+}
+.header-img .body .header-body-1{
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 25%;
+}
+.header-img .body .header-body-1 img{
+    /* height: 51.5%; */
+    position: sticky;
+
+}
+.header-img .header-body .p-1{
+    font-size: 30px;
+    font-weight: 400;
+    color: rgb(46, 45, 45);
+    background-color: white;
+    max-width: 400px;
+    min-height: 15%;
+    padding-top: 0.7%;
+    padding-left: 1%;
+}
+.header-img .header-body .p-2{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+    background-color: rgb(95, 93, 93);
+    max-width: 440px;
+    min-height: 12%;
+    padding-top: 0.5%;
+    padding-left: 0.5%;
+}
+.header-img .header-body button{
+    margin-bottom: 1%;
+    font-size: 14px;
+    font-weight: 600;
+    color:white;
+    background-color: #7871d4;
+    border: 1px solid #7871d4;
+    max-width: 210px;
+    min-height: 34px;
+}
+/* =========================  MEDIA QUERY FOR LAPTOP ============================== */
+@media (max-width : 1024px) {
+    .header-img .body .header-body{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20%;
+        height: 60vh;
+    }
+    .header-img .body .header-body-1 {
+        width: 40%;
+        margin-top: 5%;
+        margin-left: 15%;
+    }
+    .header-img .body .header-body-1 img {
+        position: absolute;
+        top: 419px;
+        right: 10px;
+        height: 41.5%;
+     
+    }
+}
+@media (max-width : 923px) {
+    .header-img .body .header-body-1 img{
+        height: 41.5%;
+        position: absolute;
+        top: 410px;
+     
+    }
+}
+@media (max-width : 769px) {
+    .header-img .body .header-body-1 img{
+        height: 41%;
+        position: absolute;
+        top: 384px;
+     
+    }
+}
+@media (max-width : 450px) {
+    .header-img .body .header-body-1 img{
+        height: 51%;
+        position: absolute;
+        top: 306px;
+     
+    }
+}
+
+
+/* ========================== BODY ===================================== */
+
+/* ======================== BODY- HEADING ============================== */
+.body-heading{
+    /* margin: 5%; */
+    margin-top: 2rem;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;  
+}
+.body-heading .p-1{
+    margin-bottom: 1%;
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(29, 28, 28);
+}
+.body-heading .p-2  {
+    margin-bottom: 1%;
+    margin-left: 6%;
+    margin-right: 6%;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(29, 28, 28);
+}
+/* ==================================== Cards ====================================== */
+.cards{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    text-align: center;
+    flex-wrap: wrap;
+    /* width: 100%; */
+}
+.cards .div-1{
+    width: 260px;
+    margin: 1rem;
+}
+.cards div{
+    position: relative;
+    border: 2px solid grey;
+    /* width: 25%; */
+    /* margin-left: 1rem; */
+    /* margin-left: 0.10rem; */
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.cards div div{
+    position: absolute;
+    width: 25%;
+    height: 20%;
+    left: 35%;
+    top: -10%;
+    border: 2px solid rgb(92, 88, 88);
+    text-align: center;
+    padding-top: 2%;
+    background-color: white;
+}
+.cards div .p-1{
+    margin-bottom: 30px;
+    font-size: 150%;
+    color: rgb(10, 10, 10);
+}
+.cards div .p-2{
+    margin-bottom: 20px;
+    font-size: 120%;
+    color: rgb(104, 101, 101);
+}
+.div-1{
+    width: 200px;
+}
+
+/* ============================ RECENTS ================================= */
+.recents{
+    margin:5%;
+}
+.recents p{
+    margin-bottom:3%;
+    font-size: 25px;
+}
+.recents .div-1 {
+    width: 100%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+.recents .div-1 img {
+    width:23%;
+    margin-right: 2%;
+}
+/* ============================= JONATHAN DOWER ========================= */
+.Jonathan{
+    display: flex;
+    flex-direction: column;
+    padding: 3% 15%;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(to right, #2EBF91,#8360C3);   
+    color: white;            
+
+}
+.Jonathan img{
+    width: 10%;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-bottom: 2%;
+}
+.Jonathan p{
+    font-size: 130%;
+    padding-bottom: 3%;
+}
+/* ============================== WHY CHOOSE US ============================ */
+.why-choose{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 5% 7%;  
+}
+.why-choose .div-1{
+    width: 50%;
+}
+.why-choose .div-1 .p-1{
+    font-size: 170%;
+    margin-bottom: 2%;
+}
+.why-choose .div-1 .p-2{
+    font-size: 110%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.why-choose .div-1 .p-3{
+    margin-bottom: 3%;
+}
+/* ============= */
+.What-client{
+  margin-left: 10%;
+  width: 100%;
+  margin-bottom: 10%;
+}
+.What-client .p-1{
+    font-size: 170%;
+    margin-bottom: 2%;
+}
+
+.What-client .div-1 {
+    display: flex;
+    width: 100%;
+    margin: 5px;
+}
+.percent{
+    width: 30px;
+    background-color: #121113;
+    color: #fff;
+    padding-top: 4px;
+    border-radius: 5px;
+    border-left: 2px solid white;
+    width: 50px;
+}
+.subject1{
+    border-left: 4px solid white;
+    background-color: #8360C3;
+    color: #fff;
+    width: 50%;
+    height: 30px;
+    padding-top: 4px;
+    border-radius: 5px;
+}
+.subject2{
+    border-left: 4px solid white;
+    background-color: #8360C3;
+    color: #fff;
+    width: 400px;
+    padding-top: 4px;
+    border-radius: 5px;
+    height: 30px;
+}
+.subject3{
+    border-left: 4px solid white;
+    background-color: #8360C3;
+    color: #fff;
+    width: 90%;
+    padding-top: 4px;
+    border-radius: 5px;
+    height: 30px;
+}
+.subject4{
+    border-left: 4px solid white;
+    background-color: #8360C3;
+    color: #fff;
+    width: 80%;
+    padding-top: 4px;
+    border-radius: 5px;
+    height: 30px;
+}
+.subject5{
+    border-left: 4px solid white;
+    background-color: #8360C3;
+    color: #fff;
+    width: 50%;
+    padding-top: 4px;
+    border-radius: 5px;
+    height: 30px;
+}
+/* ========================= media query for laptop ====================================== */
+@media (max-width : 1024px) {
+    .why-choose .div-1{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .why-choose{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        padding: 5% 7%;  
+    }
+    .What-client{
+        margin-left: 0px;
+        width: 100%;
+      }
+      .cards{
+        flex-direction: column;
+        align-items: center;
+      }
+      .cards div{
+        margin-bottom: 2rem;
+        width: 280px;
+      }
+      .recents .div-1{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .recents .div-1 img{
+        margin-bottom: 1rem;
+      }
+      .meet{
+        justify-content: center !important;
+        align-items: center !important;
+      }
+      .div-download{
+        flex-direction: column;
+      }
+      .our-clients{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center !important;
+        align-items: center !important;
+      }
+      .meet div{
+        margin-left: 1rem;
+    }
+}
+@media (max-width : 495px) {
+
+.subject1{
+    border-left: 4px solid white;
+    background-color: #8360C3;
+    color: #fff;
+    width: 35%;
+    height: 30px;
+    padding-top: 4px;
+    border-radius: 5px;
+}
+.subject2{
+    border-left: 4px solid white;
+    background-color: #8360C3;
+    color: #fff;
+    width: 150px;
+    padding-top: 4px;
+    border-radius: 5px;
+    height: 30px;
+}
+.subject3{
+    border-left: 4px solid white;
+    background-color: #8360C3;
+    color: #fff;
+    width: 60%;
+    padding-top: 4px;
+    border-radius: 5px;
+    height: 30px;
+}
+.subject4{
+    width: 40%;
+    
+}
+.subject5{
+
+    width: 35%;
+    
+}
+}
+
+/* ============================= Meet the team ======================= */
+.meet{
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;  
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+.meet .img-1{
+    background-image: url('Assets/1.png');
+    height: 300px;
+    /* width: 30%; */
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    /* padding-right: 11px; */
+    margin-bottom: 20px;
+    background-size: cover;
+}
+.meet .div-2{
+    background-image: url('Assets/2.png');
+    height: 300px;
+    /* width: 30%; */
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    /* padding-right: 11px; */
+    margin-bottom: 20px;
+}
+.meet .div-3{
+    background-image: url('Assets/3.png');
+    height: 300px;
+    /* width: 30%; */
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    /* padding-right: 12px; */
+    margin-bottom: 20px;
+}
+.meet .div-4{
+    background-image: url('Assets/4.png');
+    height: 300px;
+    /* width: 30.2%; */
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 20px;
+    /* padding-right: 12px; */
+}
+.meet div p{
+    width: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+    height: 15%;
+    background-color: #7871d4;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    font-size: 100%;
+    opacity: 0.9;
+}
+/* ================================= OUR CLIENTS =========================== */
+.container .row .our-clients{
+    display: flex;
+    justify-content: space-around;
+}
+/* ================================ download ================================ */
+.div-download{
+    width: 100%;
+    min-height: 130px;
+    padding: 3%;
+    background-color: #7871d4;
+    display: flex;
+    justify-content: space-between;
+}
+.div-download .div-1{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.div-download .div-1 .p-1{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+.div-download .div-1 .p-2{
+    color: white;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+/* =========================== FOOTER ================================= */
+.download_now{
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    background-color: #A29BFE;
+    height: 90px;
+}
+.d_design{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+.design_small{
+    color: #fff;
+    margin-top: 0.70rem;
+}
+.d_download{
+    padding: 0.50rem 1.5rem;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: 600;
+}
+.footer_cards{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    /* align-items: center;  */
+    min-height: 48vh;
+    color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+.footer_cards h2{
+    margin-bottom: 1rem;
+}
+.address{
+    margin-top: 1rem;
+}
+.post_bold{
+    font-weight: 600;
+}
+.post_small{
+    font-size: 13px;
+    color: gray;
+}
+.twitter_post{
+    line-height: 22px;
+}
+.t_small{
+    margin-top: 0.50rem;
+}
+.footer_last_section{
+    background-color: #212e3b;
+    color: #fff;
+    height: 50px;
+}
+.foot_icon i{
+    padding-left: 1rem;
+}
+.footer_last_section{
+    min-height: 65px;
+}
+.footer_last{
+    display: flex;
+    justify-content: space-between;
+    width: 86%;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 1.2rem;
+}
+
+
+@media (max-width:768px){
+    .header-body p{
+        font-size: 18px !important;
+    }
+    .header-nav a{
+        font-size: 12px !important;
+    }
+    .header-nav p{
+        font-size: 16px !important;
+    }
+    .recents .div-1{
+        width: 100% !important;
+    }
+    .recents img{
+        width: 225px !important;
+    }
+    .meet div{
+        margin: 2rem;
+    }
+    .meet div{
+        margin-left: 1rem;
+    }
+}
